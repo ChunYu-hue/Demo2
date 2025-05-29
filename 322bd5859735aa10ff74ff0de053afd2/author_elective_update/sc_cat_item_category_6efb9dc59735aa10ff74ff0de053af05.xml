@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Catalog Item2">63bbd5c59735aa10ff74ff0de053af52</sc_cat_item>
+        <sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 05:55:38</sys_created_on>
+        <sys_id>6efb9dc59735aa10ff74ff0de053af05</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Catalog Item2</sys_name>
+        <sys_package display_value="Demo 2" source="x_1755770_demo_2">322bd5859735aa10ff74ff0de053afd2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo 2">322bd5859735aa10ff74ff0de053afd2</sys_scope>
+        <sys_update_name>sc_cat_item_category_6efb9dc59735aa10ff74ff0de053af05</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 05:55:38</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Demo 2">322bd5859735aa10ff74ff0de053afd2</application>
+        <file_path/>
+        <instance_id>f709a4cf932566dc401cddd548373caa</instance_id>
+        <instance_name>dev348867</instance_name>
+        <name>sc_cat_item_category_6efb9dc59735aa10ff74ff0de053af05</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Catalog Item2">63bbd5c59735aa10ff74ff0de053af52</sc_cat_item><sc_category display_value="Can We Help You?">e15706fc0a0a0aa7007fc21e1ab70c2f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-05-27 05:55:38</sys_created_on><sys_id>6efb9dc59735aa10ff74ff0de053af05</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Can We Help You?.Catalog Item2</sys_name><sys_package display_value="Demo 2" source="x_1755770_demo_2">322bd5859735aa10ff74ff0de053afd2</sys_package><sys_policy/><sys_scope display_value="Demo 2">322bd5859735aa10ff74ff0de053afd2</sys_scope><sys_update_name>sc_cat_item_category_6efb9dc59735aa10ff74ff0de053af05</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-05-27 05:55:38</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>1408455048</payload_hash>
+        <record_name>Can We Help You?.Catalog Item2</record_name>
+        <reverted_from/>
+        <source>7e2bd5859735aa10ff74ff0de053afd6</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 05:55:38</sys_created_on>
+        <sys_id>22fb9dc59735aa10ff74ff0de053af0a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197104f8eed0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 05:55:38</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>62fb9dc54435aa108b063cf75dc22809</update_guid>
+        <update_guid_history>62fb9dc54435aa108b063cf75dc22809:1408455048</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Can We Help You?.Catalog Item2">97fb9dc59735aa10ff74ff0de053af5b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 05:55:42</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>339ce1586bd0405287367c158e075c44</sys_id>
+        <sys_metadata>6efb9dc59735aa10ff74ff0de053af05</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Can We Help You?.Catalog Item2</sys_name>
+        <sys_package display_value="Demo 2" source="x_1755770_demo_2">322bd5859735aa10ff74ff0de053afd2</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Demo 2">322bd5859735aa10ff74ff0de053afd2</sys_scope>
+        <sys_scope_delete display_value="">8e574e8b78104451b13ab26cb111dab9</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_6efb9dc59735aa10ff74ff0de053af05</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_6efb9dc59735aa10ff74ff0de053af05">22fb9dc59735aa10ff74ff0de053af0a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 05:55:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

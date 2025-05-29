@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller = function($scope) {
+    var c = this;
+    c.currentStep = 1; // 初始化当前步骤为Section 1
+    // 通用验证逻辑：检查Geo，Country和company（可扩展其他字段）
+    var validateFields = function() {
+        var gform = $scope.page.g_form;
+        var geo = gform.getValue('geo');   // 图中Geo字段
+        var country = gform.getValue('country'); // 图中国家字段
+			  var company = gform.getValue('company'); // 图中公司字段
+        // 验证逻辑：确保Geo和Country和company非空（根据业务调整）
+        if (!geo || !country || !company) {
+            alert('Please select Geo and Country and company to proceed.'); // 提示用户
+            return false; // 验证失败
+        }
+        return true; // 验证通过
+    };
+    // Section 1 切换（无验证，默认第一步）
+    c.setSection1Visible = function() {
+        c.currentStep = 1;
+        $scope.page.g_form.setValue('current_section', '1');
+    };
+    // Section 2 及后续切换：先验证再切换
+    c.setSection2Visible = function() {
+        if (validateFields()) { // 验证通过
+            c.currentStep = 2;
+            $scope.page.g_form.setValue('current_section', '2');
+        }
+    };
+    c.setSection3Visible = function() {
+        if (validateFields()) {
+            c.currentStep = 3;
+            $scope.page.g_form.setValue('current_section', '3');
+        }
+    };
+    c.setSection4Visible = function() {
+        if (validateFields()) {
+            c.currentStep = 4;
+            $scope.page.g_form.setValue('current_section', '4');
+        }
+    };
+    c.setSection5Visible = function() {
+        if (validateFields()) {
+            c.currentStep = 5;
+            $scope.page.g_form.setValue('current_section', '5');
+        }
+    };
+};
+
+
+
+
+
+
+
+
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.btn-breadcrumb .btn:not(:last-child):after {&#13;
+  content: " ";&#13;
+  display: block;&#13;
+  width: 0;&#13;
+  height: 0;&#13;
+  border-top: 17px solid transparent;&#13;
+  border-bottom: 17px solid transparent;&#13;
+  border-left: 10px solid white;&#13;
+  position: absolute;&#13;
+  top: 50%;&#13;
+  margin-top: -17px;&#13;
+  left: 100%;&#13;
+  z-index: 3;&#13;
+}&#13;
+.btn-breadcrumb .btn:not(:last-child):before {&#13;
+  content: " ";&#13;
+  display: block;&#13;
+  width: 0;&#13;
+  height: 0;&#13;
+  border-top: 17px solid transparent;&#13;
+  border-bottom: 17px solid transparent;&#13;
+  border-left: 10px solid rgb(173, 173, 173);&#13;
+  position: absolute;&#13;
+  top: 50%;&#13;
+  margin-top: -17px;&#13;
+  margin-left: 1px;&#13;
+  left: 100%;&#13;
+  z-index: 3;&#13;
+}&#13;
+&#13;
+/** The Spacing **/&#13;
+.btn-breadcrumb .btn {&#13;
+  padding:6px 12px 6px 24px;&#13;
+  font-size:16px;&#13;
+}&#13;
+.btn-breadcrumb .btn:first-child {&#13;
+  padding:6px 6px 6px 10px;&#13;
+}&#13;
+.btn-breadcrumb .btn:last-child {&#13;
+  padding:6px 18px 6px 24px;&#13;
+}&#13;
+&#13;
+/** Default button **/&#13;
+.btn-breadcrumb .btn.btn-default:not(:last-child):after {&#13;
+  border-left: 10px solid #fff;&#13;
+}&#13;
+.btn-breadcrumb .btn.btn-default:not(:last-child):before {&#13;
+  border-left: 10px solid #ccc;&#13;
+}&#13;
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):after {&#13;
+  border-left: 10px solid #ebebeb;&#13;
+}&#13;
+.btn-breadcrumb .btn.btn-default:hover:not(:last-child):before {&#13;
+  border-left: 10px solid #adadad;&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>catalog_item2_section</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Catalog Item2 Section</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 06:51:02</sys_created_on>
+        <sys_id>4aa8ed099775aa10ff74ff0de053affd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Catalog Item2 Section</sys_name>
+        <sys_package display_value="Demo 2" source="x_1755770_demo_2">322bd5859735aa10ff74ff0de053afd2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Demo 2">322bd5859735aa10ff74ff0de053afd2</sys_scope>
+        <sys_update_name>sp_widget_4aa8ed099775aa10ff74ff0de053affd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-29 06:51:30</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+  <div class="btn-group btn-breadcrumb" >
+    <a ng-click="c.setSection1Visible()" class="btn btn-default"><i class="glyphicon glyphicon-home"></i></a>
+    <a ng-click="c.setSection1Visible()" class="btn btn-default">Section 1</a>
+    <a ng-click="c.setSection2Visible()" class="btn btn-default">Section 2</a>
+    <a ng-click="c.setSection3Visible()" class="btn btn-default">Section 3</a>
+    <a ng-click="c.setSection4Visible()" class="btn btn-default">Section 4</a>
+    <a ng-click="c.setSection5Visible()" class="btn btn-default">Section 5</a>
+  </div>	
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>4aa8ed099775aa10ff74ff0de053affd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-27 06:51:02</sys_created_on>
+        <sys_id>0aa821499775aa10ff74ff0de053af01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-27 06:51:02</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

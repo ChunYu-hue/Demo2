@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c7c203a997f16e10ff74ff0de053afc6" label="Country for catalog item2" max_length="40" name="x_1755770_demo_2_country_for_catalog_item2" type="collection">
+        <element dependent="geo" dependent_on_field="geo" label="Geo" max_length="40" name="geo" type="string" use_dependent_field="true"/>
+        <element display="true" label="Country" max_length="40" name="country" type="string"/>
+        <index name="index">
+            <element name="geo"/>
+        </index>
+    </element>
+</database>

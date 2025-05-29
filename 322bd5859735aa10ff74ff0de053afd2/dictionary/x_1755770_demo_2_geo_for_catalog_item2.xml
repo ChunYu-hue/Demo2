@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0892cb6997f16e10ff74ff0de053afc6" label="Geo for catalog item2" max_length="40" name="x_1755770_demo_2_geo_for_catalog_item2" type="collection">
+        <element display="true" label="Geo" max_length="40" name="geo" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="b4f247a997f16e10ff74ff0de053af30" label="Company for catalog item2" max_length="40" name="x_1755770_demo_2_company_for_catalog_item2" type="collection">
+        <element label="Country" max_length="40" name="country" type="string"/>
+        <element display="true" label="Company" max_length="40" name="company" type="string"/>
+        <index name="index">
+            <element name="country"/>
+        </index>
+    </element>
+</database>
